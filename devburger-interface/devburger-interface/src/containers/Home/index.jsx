@@ -1,6 +1,5 @@
-import { CategoriesCarousel } from "../../components/CategoriesCarousel/index.jsx"
-import { OffersCarousel } from "../../components/offersCarousel/index.jsx"
-import { Banner, Container} from "./styles"
+import { CategoriesCarousel, OffersCarousel } from "../../components"
+import { Banner, Container } from "./styles"
 
 
 

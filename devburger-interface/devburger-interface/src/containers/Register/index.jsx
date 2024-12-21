@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Form, InputContainer, LeftContainer, Link, RightContainer, Title } from "./styles";
 import Logo from '../../assets/logo-burger.svg';
 
-import { Button } from "../../components/button";
+import { Button } from "../../components/Button/index.jsx";
 import { api } from '../../services/api.js'
 
 

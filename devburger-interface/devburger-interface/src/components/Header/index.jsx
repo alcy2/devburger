@@ -36,7 +36,7 @@ export const Header = () => {
                     </Profile>
 
                     <LinkContainer>
-                        <ShoppingCart color="#fff" size={24} />
+                        <ShoppingCart color="${(props) => props.theme.white}" size={24} />
                         <HeaderLink to='/carrinho'>Carrinho</HeaderLink>
                     </LinkContainer>
 

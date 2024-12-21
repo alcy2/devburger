@@ -10,6 +10,7 @@ import ProductController from './app/controllers/ProductController.js';
 import authMiddleware from './app/middlewares/auth.js';
 import categoryController from './app/controllers/categoryController.js';
 import OrderController from './app/controllers/OrderController.js';
+import CreatePaymentIntentController from './app/controllers/stripe/CreatePaymentIntentController.js'
 
 const router = new Router();
 
@@ -30,5 +31,7 @@ router.put('/categories/:id', upload.single('file'), categoryController.update);
 router.post('/orders', OrderController.store);
 router.get('/orders', OrderController.index);
 router.put('/orders/:id', OrderController.update);
+
+router.post('create-payment-intent', CreatePaymentIntentController.store)
 
 export default router;

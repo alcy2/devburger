@@ -15,7 +15,7 @@ import Logo from '../../assets/logo-burger.svg';
 
 import { useUser } from "../../hooks/UserContext.jsx";
 
-import { Button } from "../../components/button";
+import { Button } from "../../components/Button/index.jsx";
 import { api } from '../../services/api.js'
 
 
@@ -59,7 +59,13 @@ export function Login() {
                 success: {
                     render() {
                         setTimeout(() => {
-                            Navigate('/');
+                            if (userData?.admin) {
+                                Navigate('/admin/pedidos')
+                            } else {
+                                Navigate('/')
+                            }
+                            ;
+                            ;
                         }, 2000);
                         return 'Seja Bem-vindo(a) 👌';
                     }
